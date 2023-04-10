@@ -5,8 +5,8 @@
 }
 
 body {
-  background-color: #09090a;
-  color: white;
+  background-color: white;
+  color: black;
   height: 100vh;
 }
 
@@ -14,7 +14,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
+  color: white;
   padding: 48px;
 
   position: fixed;
@@ -23,16 +23,17 @@ header {
 }
 
 img {
-  padding: 16px 24px;
-  border-radius: 8px;
+  padding: 8px 16px;
+  border-radius: 50%;
   background-color: transparent;
-  width: 25%;
+  width: 10%;
 }
 
 #form-biografia {
   display: flex;
   padding: 182px 48px 48px;
   width: fit-content;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .historia {
