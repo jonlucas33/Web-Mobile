@@ -33,7 +33,7 @@ header {
 .atributos {
   display: flex;
   padding: 200px 0px 0px 24px;
-  width: 20%;
+  width: 30%;
   height: 70vh;
   /*border: solid 1px yellow;*/
   gap: 24px;
