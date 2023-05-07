@@ -21,8 +21,6 @@ body {
   background-position: center;
   width: 100%;
   height: 100vh;
-  display: flex;
-  gap: 12px;
 }
 
 header {
@@ -30,13 +28,8 @@ header {
   align-items: center;
   justify-content: space-around;
   padding-top: 1rem;
-  padding: 5px 0 0 24px;
-  position: fixed;
-  width: 100%;
-  /*border: solid 1px yellow;*/
   max-width: 100%;
   text-align: center;
-  font-size: xx-large;
 }
 
 .cabeçalho-link {
@@ -87,14 +80,50 @@ header {
   transition: 0.5s;
 }
 
-.atributos {
-  display: flex;
-  padding: 200px 0px 0px 24px;
-  width: 30%;
-  height: 70vh;
-  /*border: solid 1px yellow;*/
-  gap: 24px;
-  align-items: center;
-  box-sizing: border-box;
-  flex-wrap: wrap;
+.container-text {
+  padding: 250px 0 0 130px;
+}
+
+.text h3 {
+  color: black;
+  font-size: 12px;
+}
+
+.text h1 {
+  color: black;
+  margin-top: 10px;
+}
+
+.text span {
+  color: #6a5acd;
+}
+
+.text p {
+  color: black;
+  font-size: 10px;
+  font-weight: 300;
+  margin-top: 10px;
+}
+.redes-sociais a {
+  color: #6a5acd;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.text button {
+  color: #6a5acd;
+  background: transparent;
+  border: 1px solid #6a5acd;
+  padding: 5px;
+  border-radius: 50px;
+  font-size: 12px;
+  width: 150px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.text button:hover {
+  background-color: #6a5acd;
+  color: white;
+  transition: 0.5s;
 }
