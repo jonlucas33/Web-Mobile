@@ -127,3 +127,14 @@ header {
   color: white;
   transition: 0.5s;
 }
+
+.background #contatos {
+  display: flex;
+  list-style: none;
+  gap: 0.5rem;
+}
+
+.background #contatos i {
+  display: block;
+  padding: 0.5rem;
+}
