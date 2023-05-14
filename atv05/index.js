@@ -16,3 +16,21 @@ const observer = new IntersectionObserver(function (entries, observer) {
 sections.forEach((section) => {
   observer.observe(section)
 })
+
+const button = document.querySelector("#generate-pdf")
+
+button.addEventListener("click", () => {
+  const img = document.createElement("IMG")
+  img.src = "./cv.jpg"
+  img.style.width = "703px"
+  img.style.height = "1032px"
+
+  const options = {
+    margin: [10, 10, 10, 10],
+    filename: "arquivo.pdf",
+    html2canvas: { scale: 2 },
+    jsPDF: { unit: "mm", format: "a4", orientation: "portrait" },
+  }
+
+  html2pdf().set(options).from(img).save()
+})

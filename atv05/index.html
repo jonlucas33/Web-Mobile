@@ -65,14 +65,24 @@
             Sou um graduando em ciências da computação, estou cursando o <br />
             5° período na Universidade Católica de Pernambuco.
           </p>
-          <div class="redes-sociais">
+          <div id="img" class="redes-sociais">
             <a href="#"><i class="fa-brands fa-linkedin"></i></a>
             <a href="#"><i class="fa-solid fa-envelope"></i></a>
             <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="./cv.pdf" target="_blank"
+              ><i class="fa-solid fa-file-pdf"></i
+            ></a>
           </div>
-          <button>Sobre mim</button>
+          <button id="generate-pdf">Baixe o meu currículo</button>
         </div>
       </div>
     </div>
   </body>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"
+    integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="index.js"></script>
 </html>
