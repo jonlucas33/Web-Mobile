@@ -34,3 +34,11 @@ button.addEventListener("click", () => {
 
   html2pdf().set(options).from(img).save()
 })
+
+const btnContatos = document.querySelector("#btnContatos")
+
+function toggleMenu(params) {
+  const nav = document.querySelector("#nav")
+  nav.classList.toggle("active")
+}
+btnContatos.addEventListener("click", toggleMenu)

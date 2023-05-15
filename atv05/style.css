@@ -15,7 +15,7 @@ body {
 
 .background {
   /*background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-  background-image: url(pexels-pixabay-248515.jpg);
+  background-image: url(background2.jpg);
   background-size: cover;*/
   background-color: white;
   background-position: center;
@@ -30,6 +30,8 @@ header {
   padding-top: 1rem;
   max-width: 100%;
   text-align: center;
+  /*background: rgb(160, 104, 104);*/
+  /*height: 150px;*/
 }
 
 .cabeçalho-link {
@@ -128,13 +130,41 @@ header {
   transition: 0.5s;
 }
 
-.background #contatos {
+#contatos {
   display: flex;
   list-style: none;
   gap: 0.5rem;
 }
 
-.background #contatos i {
+#contatos i {
   display: block;
   padding: 0.5rem;
 }
+
+#btnContatos {
+  display: none;
+}
+
+
+  #btnContatos {
+    display: block;
+  }
+  #contatos {
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 116px;
+    right: 0px;
+    /*background: rgb(160, 104, 104);*/
+    height: calc(100vh - 116px);
+    z-index: 1000;
+  }
+  #nav.active #contatos {
+    display: block;
+  }
+  /*#contatos i{
+    padding: 1rem 0;
+    margin: 0 1rem;
+    border-bottom: 2px solid rgb(0,0,0,.05);
+  }*/
+
