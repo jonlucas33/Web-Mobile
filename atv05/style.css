@@ -65,22 +65,11 @@ header {
   cursor: pointer;
 }
 
-.cabeçalho-link button {
-  color: black;
-  background: transparent;
-  border: 1px solid black;
-  padding: 5px;
-  border-radius: 50px;
-  font-size: 12px;
-  width: 150px;
-  cursor: pointer;
-}
-
-.cabeçalho-link button:hover {
+/*.cabeçalho-link button:hover {
   background-color: black;
   color: white;
   transition: 0.5s;
-}
+}*/
 
 .container-text {
   padding: 250px 0 0 130px;
@@ -178,4 +167,18 @@ header {
     margin: 0 1rem;
     /*border-bottom: 2px solid rgb(0, 0, 0, 0.05);*/
   }
+  #btnMobile {
+  display: flex;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+  gap: 0.5rem;
+}
+
+#hamburguer {
+  width: 20px;
+  border-top: 2px solid;
+}
 }
