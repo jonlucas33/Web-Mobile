@@ -30,8 +30,8 @@ header {
   padding-top: 1rem;
   max-width: 100%;
   text-align: center;
-  /*background: rgb(160, 104, 104);*/
-  /*height: 150px;*/
+  background: #6a5acd;
+  /*height: 70px;*/
 }
 
 .cabeçalho-link {
@@ -47,7 +47,7 @@ header {
 }
 
 .cabeçalho-link a:hover {
-  color: #6a5acd;
+  color: white;
   transition: 0.3s all;
 }
 
@@ -55,8 +55,8 @@ header {
   height: 40px;
   width: 40px;
   background: transparent;
-  color: #6a5acd;
-  border: 1px solid #6a5acd;
+  color: black;
+  border: 1px solid black;
   border-radius: 50%;
   display: inline-flex;
   align-items: center;
@@ -66,9 +66,9 @@ header {
 }
 
 .cabeçalho-link button {
-  color: #6a5acd;
+  color: black;
   background: transparent;
-  border: 1px solid #6a5acd;
+  border: 1px solid black;
   padding: 5px;
   border-radius: 50px;
   font-size: 12px;
@@ -77,7 +77,7 @@ header {
 }
 
 .cabeçalho-link button:hover {
-  background-color: #6a5acd;
+  background-color: black;
   color: white;
   transition: 0.5s;
 }
@@ -130,41 +130,52 @@ header {
   transition: 0.5s;
 }
 
-#contatos {
+#menu {
   display: flex;
   list-style: none;
-  gap: 0.5rem;
+  gap: 24px;
 }
 
-#contatos i {
+#menu i {
   display: block;
   padding: 0.5rem;
 }
 
-#btnContatos {
+#btnMobile {
   display: none;
 }
 
-
-  #btnContatos {
+@media (max-width: 600px) {
+  #btnMobile {
     display: block;
   }
-  #contatos {
-    display: none;
+  #menu {
+    display: block;
     position: absolute;
     width: 100%;
-    top: 116px;
+    top: 56px;
     right: 0px;
-    /*background: rgb(160, 104, 104);*/
-    height: calc(100vh - 116px);
+    background: #6a5acd;
+    transition: 0.6s;
     z-index: 1000;
+    height: 0px;
+    visibility: hidden;
+    overflow-y: hidden;
   }
-  #nav.active #contatos {
-    display: block;
+  #nav.active #menu {
+    height: calc(100vh - 56px);
+    visibility: visible;
+    overflow-y: auto;
   }
-  /*#contatos i{
+
+  #menu li {
     padding: 1rem 0;
     margin: 0 1rem;
-    border-bottom: 2px solid rgb(0,0,0,.05);
-  }*/
-
+    /*border-bottom: 2px solid black;*/
+  }
+  #menu i {
+    padding: 12px 0;
+    margin: 0 1rem;
+    /*border-bottom: 2px solid rgb(0, 0, 0, 0.05);*/
+  }
+}
