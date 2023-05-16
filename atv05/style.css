@@ -31,7 +31,7 @@ header {
   max-width: 100%;
   text-align: center;
   background: #6a5acd;
-  height: 70px;
+  height: 100px;
 }
 
 .cabeçalho-link {
@@ -116,6 +116,7 @@ header {
 #menu {
   display: flex;
   list-style: none;
+  padding-top: 20.5px;
   gap: 24px;
 }
 
