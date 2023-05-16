@@ -31,7 +31,7 @@ header {
   max-width: 100%;
   text-align: center;
   background: #6a5acd;
-  /*height: 70px;*/
+  height: 70px;
 }
 
 .cabeçalho-link {
@@ -64,12 +64,6 @@ header {
   font-size: 13px;
   cursor: pointer;
 }
-
-/*.cabeçalho-link button:hover {
-  background-color: black;
-  color: white;
-  transition: 0.5s;
-}*/
 
 .container-text {
   padding: 250px 0 0 130px;
@@ -142,7 +136,7 @@ header {
     display: block;
     position: absolute;
     width: 100%;
-    top: 56px;
+    top: 70px;
     right: 0px;
     background: #6a5acd;
     transition: 0.6s;
@@ -152,7 +146,7 @@ header {
     overflow-y: hidden;
   }
   #nav.active #menu {
-    height: calc(100vh - 56px);
+    height: calc(100vh - 70px);
     visibility: visible;
     overflow-y: auto;
   }
@@ -168,17 +162,42 @@ header {
     /*border-bottom: 2px solid rgb(0, 0, 0, 0.05);*/
   }
   #btnMobile {
-  display: flex;
-  padding: 0.5rem 1rem;
-  font-size: 1rem;
-  border: none;
-  background: none;
-  cursor: pointer;
-  gap: 0.5rem;
-}
+    display: flex;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+    gap: 0.5rem;
+  }
 
-#hamburguer {
-  width: 20px;
-  border-top: 2px solid;
-}
+  #hamburguer {
+    width: 20px;
+    border-top: 2px solid;
+  }
+
+  #hamburguer::after,
+  #hamburguer::before {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    transition: 0.3s;
+    position: relative;
+  }
+
+  #nav.active #hamburguer {
+    border-top-color: transparent;
+  }
+
+  #nav.active #hamburguer::before {
+    transform: rotate(135deg);
+  }
+
+  #nav.active #hamburguer::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
 }
