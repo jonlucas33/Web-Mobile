@@ -137,7 +137,7 @@ header {
     display: block;
     position: absolute;
     width: 100%;
-    top: 70px;
+    top: 100px;
     right: 0px;
     background: #6a5acd;
     transition: 0.6s;
@@ -147,7 +147,7 @@ header {
     overflow-y: hidden;
   }
   #nav.active #menu {
-    height: calc(100vh - 70px);
+    height: calc(100vh - 100px);
     visibility: visible;
     overflow-y: auto;
   }
